@@ -1,0 +1,29 @@
+
+LuboCM.SlotTools.registerSlotType({
+    name: "photo_gallery",
+    slot_type: "Photo Gallery",
+    items: [
+        function(slot) {
+            return $('<button>Configure</button>').button({
+                icons: { primary: "ui-icon-gear" }
+            }).click(function() {
+                var panel = '<div><p>Enter a filter to select photos for the gallery.</p>'
+                           +'<label>Enter filter:</label><input type="text"></div>';
+                $(panel).dialog({
+                    modal: true,
+                    title: 'Configure Photo Gallery Slot',
+                    buttons: {
+                        Ok: function() {
+                            var self = this;
+                            
+                            $(this).dialog("close");
+                        },
+                        Cancel: function() {
+                            $(this).dialog("close");
+                        }
+                    }
+                });
+            });
+        },
+    ],
+});

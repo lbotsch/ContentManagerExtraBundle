@@ -1,0 +1,14 @@
+_etb_slot_markdown_save:
+    pattern: /_etb/slot/markdown/save
+    defaults: { _controller: lubocm.slot_controller.markdown:saveSlotAction }
+
+_etb_slot_menu_get_paths:
+    pattern: /_etb/slot/menu/get_paths
+    defaults: { _controller: lubocm.slot_controller.menu:getPathsAction }
+_etb_slot_menu_save:
+    pattern: /_etb/slot/menu/save
+    defaults: { _controller: lubocm.slot_controller.menu:saveSlotAction }
+    
+_etb_slot_photo_gallery_save:
+    pattern: /_etb/slot/photo_gallery/save
+    defaults: { _controller: lubocm.slot_controller.photo_gallery:saveSlotAction }
